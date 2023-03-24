@@ -22,8 +22,9 @@ For example, if the speed is 80, it should print: “Points: 2”. If the driver
 Challenge 3: Net Salary Calculator (Toy Problem)
 Given the basic salary and benefits of an employee, write a program that would calculate the Payee Tax, NHIF, NSSF Deductions and net salary.
 
-NB: Use KRA, NHIF, and NSSF values provided in the link below.
+ Use KRA, NHIF, and NSSF values provided in the link below.
 
+# links
 https://www.aren.co.ke/payroll/taxrates.htmLinks to an external site.  
 
 https://www.kra.go.ke/en/individual/calculate-tax/calculating-tax/payeLinks to an external site.
