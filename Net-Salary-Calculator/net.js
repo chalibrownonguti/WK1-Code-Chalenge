@@ -1,3 +1,5 @@
+// initialize a function called grossIncome and looping through an array  allowances of allowancces
+
 function grossIncome(basicSalary, ...allowances){
 	let sum = basicSalary
 	for(let allowance of allowances){
@@ -6,7 +8,7 @@ function grossIncome(basicSalary, ...allowances){
 	return sum
 	}
    
-	//console.log(grossIncome(20000, 6000, 43000))
+	//initializing function grossPay for each grossPay. console.log(grossIncome(20000, 6000, 43000))
 	function NHIF(grossPay){
 	   if(grossPay < 6000){
 	       return 150
@@ -58,20 +60,20 @@ function grossIncome(basicSalary, ...allowances){
 	       return 1700
 	   }
        }
-       //console.log(calculateNHIF(60000))
+       //initializing a function called  NSSF console.log(calculateNHIF(60000))
    
        function NSSF(pensionablePay){
 	   return pensionablePay * 0.06
        }
-       //console.log(NSSF(7000))
+       //initiallizing a function called taxablePay.console.log(NSSF(7000))
    
-       function taxablePay(grossIncome, ...deductions){
-	   for(let deduction of deductions){
-	       grossIncome -=deduction
+       function taxablePay(grossIncome, ...Deductions){
+	   for(let Deduction of Deductions){
+	       grossIncome -=Deduction
 	   }
 	   return grossIncome
        }
-       //console.log(taxablePay(50000, 1100, 5000))
+       //initiallizing function called PAYEE with taxable as th parameter.console.log(taxablePay(50000, 1100, 5000))
    
        function PAYEE(taxablepay){
 	   if(taxablepay <= 24000){
@@ -82,29 +84,29 @@ function grossIncome(basicSalary, ...allowances){
 	       return taxablepay * 0.3
 	   }
        }
-       //console.log(PAYEE(160000))
+       //initializing a function called netPayconsole.log(PAYEE(160000))
    
        function netPay(taxablepay, payee){
 	   return taxablepay - payee
        }
-       //console.log(netPay(100000, 20000))
+       //initializing a function called handleSalary console.log(netPay(100000, 20000))
        function handleSalary(event){
 	   let val = parseInt(document.getElementById("Basic").value)
 	   let basicSalary= Boolean(val)? val : 0
-       //console.log(basicSalary)
+       //initializing an object array variable of allowance.console.log(basicSalary)
        let allowances = Array.from(document.getElementsByClassName("allowances")).map(function(element){
 	   return Boolean(element.value) ? parseInt(element.value) : 0
        })
-       //console.log(allowances)
+       //initiallizing variables of gross, nhifDeduction console.log(allowances)
        let gross = grossIncome(basicSalary, ...allowances)
-       let nhifdeductions = NHIF(gross)
-       let nssfdeductions = NSSF(gross)
-       let taxableincome = taxablePay(gross, nhifdeductions, nssfdeductions)
-       let payee = PAYEE(taxableincome)
-       let net =netPay(taxableincome, payee)
-       document.getElementById("nhif").textContent = nhifdeductions
-       document.getElementById("nssf").textContent = nssfdeductions
+       let nhifDeductions = NHIF(gross)
+       let nssfDeductions = NSSF(gross)
+       let taxableIncome = taxablePay(gross, nhifDeductions, nssfDeductions)
+       let payee = PAYEE(taxableIncome)
+       let net =netPay(taxableIncome, payee)
+       document.getElementById("nhif").textContent = nhifDeductions
+       document.getElementById("nssf").textContent = nssfDeductions
        document.getElementById("payee").textContent = payee
-       document.getElementById("taxableincome").textContent = taxableincome
-       document.getElementById("netpay").textContent = net
+       document.getElementById("taxableIncome").textContent = taxableIncome
+       document.getElementById("netPay").textContent = net
        }

@@ -1,14 +1,15 @@
 * {
     padding: 0;
-    border: 1px solid rgba(18, 12, 12);
+    border: 1px solid grey;
     border-radius: 3px;
     width: 550px;
     margin: auto;
   }
   
   body {
-    background-color: rgb(139, 112, 112);
+    background-color: wheat;
     height: -11vh;
+    align-items: center;
   }
 
   

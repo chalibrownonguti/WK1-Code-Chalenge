@@ -8,18 +8,19 @@
     <title>Net Salary Calculator</title>
 </head>
 <body>
-    <!--input form-->
+    <!--input form for the salary and how it's calculated using stylesheet and javascript and html-->
     <div id="Basic Salary">
         <h1> Net Salary Calculator</h1>
         <input id="Basic" type="number" placeholder="Basic Salary" min="0" oninput="handleSalary(event)">
+        <input type="number" id="benefit" placeholder=" Benefits" min="0" oninput="handleBenefits(events)">
     </div>
 
-    <!--output-->
+    <!--outputs for the calculated salary of the input-->
     <div>NHIF :<span id="nhif"></span></div>
     <div>NSSF :<span id="nssf"></span></div>
     <div>PAYEE : <span id="payee"></span></div>
-    <div>Taxable Income : <span id="taxableincome"></span></div>
-    <div>Net Salary : <span id="netpay"></span></div>
+    <div>Taxable Income : <span id="taxableIncome"></span></div>
+    <div>Net Salary : <span id="netPay"></span></div>
 
     <!--js file link-->
     <script src="net.js"></script>

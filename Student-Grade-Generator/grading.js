@@ -1,4 +1,8 @@
+// initialize a function called generate marks
+
 function gradingSystem(){
+
+    // 
     marks = document.getElementById("marks").value;
     if(marks<40){
         document.getElementById("results").innerHTML="E";
