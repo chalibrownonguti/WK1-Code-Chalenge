@@ -33,7 +33,7 @@ https://www.kra.go.ke/en/individual/calculate-tax/calculating-tax/payeLinks to a
 My code challenge has been distributed in github for public view anytime anyone need to refer.
 
 # license
-It has been authorized ny the MIT license publicly.
+It has been authorized ny the MIT license publicly hence can reuse code for any purpose.
 
 # Contact
-your can reach me via this email: charlesonguti1@gmail.com
+Your can reach me incase of any additional information needed or on more clarification via this email: charlesonguti1@gmail.com
