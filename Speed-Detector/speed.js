@@ -9,7 +9,7 @@ function speedDetector(){
   //declare a variable that holds the number of km/s that results to 1 demerit point
   const increase = 5;
   
-  // use if condition to see whether the speed is within the average
+  // use if else condition to see whether the speed is within the average
   if (speed <=average){
           document.getElementById("result").innerHTML= "This speed is okay!";
   }else if(speed > average){
